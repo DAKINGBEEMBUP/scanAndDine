@@ -41,7 +41,8 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #ff4757;
+    /* color: #ff4757; */
+    color: #2f3542;
 }
 
 .btn{
@@ -134,6 +135,7 @@ fieldset{
 /* CSS for Categories */
 .categories{
     padding: 4% 0;
+    background-color: #bb9f6a;
 }
 
 .box-3{
