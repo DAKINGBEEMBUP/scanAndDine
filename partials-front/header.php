@@ -14,6 +14,8 @@
     <!-- link the css file -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    
 </head>
 <body>
     <!-- navbar section starts here -->
