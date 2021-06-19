@@ -116,8 +116,6 @@
                                     <?php echo $menu_description ?>
                                 </p>
                                 <br>
-
-                                <a href="#" class="btn btn-primary">Order Now</a>
                             </div>
                         </div>
 
@@ -134,7 +132,7 @@
         </div>
 
         <p class="text-center">
-            <a href="#">See All Foods</a>
+            <a href="<?php echo SITEURL; ?>view-food.php">See All Foods</a>
         </p>
     </section>
     <!-- food menu section ends here -->
