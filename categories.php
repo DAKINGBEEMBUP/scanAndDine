@@ -26,23 +26,31 @@
                         $category_image_name = $row['category_image_name'];
                         ?>
 
-                        <a href="#">
-                            <div class="box-3 float-container">
-                                <?php
-                                    if($category_image_name==""){
-                                        //image is not available
-                                        echo "<div class='error'>Image Not Found.</div>";
+                        <a href="<?php echo SITEURL; ?>category-food.php?category_id=<?php echo $category_id ?>">
+                        <div class="box-3 float-container">
+                            <div class="inner-box-3">
+                                <div class="box-front">
+                                    <?php
+                                    //check whether image is available or not
+                                    if($category_image_name == ""){
+                                        //display message
+                                        echo "<div class='error'>Image Not Available</div>";
                                     }
                                     else{
                                         //image available
                                         ?>
-                                        <img src="<?php echo SITEURL; ?>images/category/<?php echo $category_image_name; ?>" alt="" class="img-responsive img-curve">
+                                        <img src="<?php echo SITEURL; ?>images/category/<?php echo $category_image_name ?>" class="img-responsive img-curve">
                                         <?php
                                     }
-                                ?>
+                                    ?>
+                                </div>
+                                
+                                <div class="box-behind">
+                                    <h3 class="float-text text-white"><?php echo $category_name ?></h3>
+                                </div>
 
-                                <h3 class="float-text text-white"><?php echo $category_name ?></h3>
                             </div>
+                        </div>
                         </a>
 
                         <?php

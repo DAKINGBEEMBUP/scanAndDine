@@ -20,7 +20,7 @@
     <div class="header text-center">
         <div class="wrapper">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="manage-admin.php">Admin</a></li>
                 <li><a href="manage-reservation.php">Reservation</a></li>
                 <li><a href="manage-category.php">Category</a></li>

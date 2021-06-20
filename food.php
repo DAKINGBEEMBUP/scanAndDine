@@ -194,4 +194,10 @@
         </div>
     </div>
 
+    <div class="main-content">
+        <div class="wrapper">
+        <a href="<?php echo SITEURL; ?>payment.php" class="btn-green">Pay</a>
+        </div>
+    </div>
+
 <?php include('partials-front/footer.php') ?>

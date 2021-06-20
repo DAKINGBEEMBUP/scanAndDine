@@ -112,13 +112,37 @@
                <table class="tbl-30">
                 <tr>
                         <td>Choose one of the payment method below: </td>
+                       
                         <td>
-                            <input type="radio" name="payment_method" value="GoPay"> GoPay <br>
-                            <input type="radio" name="payment_method" value="OVO"> OVO <br>
-                            <input type="radio" name="payment_method" value="ShopeePay"> ShopeePay <br>
-                            <input type="radio" name="payment_method" value="Bank Transfer"> Bank Transfer <br>
-                            <input type="radio" name="payment_method" value="Credit Card"> Credit Card <br>
-                            <input type="radio" name="payment_method" value="Cash"> Cash <br>
+                            <label class="containerForm">
+                                <input type="radio" checked="checked" name="payment_method" value="GoPay"> GoPay <br>
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                            <label class="containerForm">
+                                <input type="radio" name="payment_method" value="OVO"> OVO <br>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="containerForm">
+                                <input type="radio" name="payment_method" value="ShopeePay"> ShopeePay <br>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="containerForm">
+                                <input type="radio" name="payment_method" value="Bank Transfer"> Bank Transfer <br>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="containerForm">
+                                <input type="radio" name="payment_method" value="Credit Card"> Credit Card <br>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="containerForm">
+                                <input type="radio" name="payment_method" value="Cash"> Cash <br>
+                                <span class="checkmark"></span>
+                            </label>
                         </td>
                 </tr>
 

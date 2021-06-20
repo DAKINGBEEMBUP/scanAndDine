@@ -7,6 +7,13 @@
         }
     ?>
 
+    <!-- ditambah -->
+    <section class="restaurant">
+        <div class="resto">
+            <img src="asset/unknown.png" alt="">
+        </div>
+    </section>
+
     <!-- categories section starts here -->
     <section class="categories">
         <div class="container">
@@ -32,23 +39,30 @@
                       $category_image_name = $row['category_image_name'];
                       ?>
 
-                      <a href="#">
+                      <a href="<?php echo SITEURL; ?>category-food.php?category_id=<?php echo $category_id ?>">
                         <div class="box-3 float-container">
-                            <?php
-                            //check whether image is available or not
-                                if($category_image_name == ""){
-                                    //display message
-                                    echo "<div class='error'>Image Not Available</div>";
-                                }
-                                else{
-                                    //image available
-                                    ?>
-                                    <img src="<?php echo SITEURL; ?>images/category/<?php echo $category_image_name ?>" class="img-responsive img-curve">
+                            <div class="inner-box-3">
+                                <div class="box-front">
                                     <?php
-                                }
-                            ?>
-                            
-                            <h3 class="float-text text-white"><?php echo $category_name ?></h3>
+                                    //check whether image is available or not
+                                    if($category_image_name == ""){
+                                        //display message
+                                        echo "<div class='error'>Image Not Available</div>";
+                                    }
+                                    else{
+                                        //image available
+                                        ?>
+                                        <img src="<?php echo SITEURL; ?>images/category/<?php echo $category_image_name ?>" class="img-responsive img-curve">
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                
+                                <div class="box-behind">
+                                    <h3 class="float-text text-white"><?php echo $category_name ?></h3>
+                                </div>
+
+                            </div>
                         </div>
                       </a>
 
@@ -116,6 +130,7 @@
                                     <?php echo $menu_description ?>
                                 </p>
                                 <br>
+
                             </div>
                         </div>
 
@@ -132,7 +147,7 @@
         </div>
 
         <p class="text-center">
-            <a href="<?php echo SITEURL; ?>view-food.php">See All Foods</a>
+            <a href="#">See All Foods</a>
         </p>
     </section>
     <!-- food menu section ends here -->
